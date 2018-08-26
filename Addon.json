@@ -1,0 +1,15 @@
+{
+    "Name": "Windows95HUD",
+    "Tags": [
+      "UI",
+      "HUD"
+    ],
+    "Code": {
+      "Enabled": false,
+      "Requires": {
+        "Engine": "*",
+        "MenuSystem": "*",
+        "SourceImport": "*"
+      }
+    }
+  }

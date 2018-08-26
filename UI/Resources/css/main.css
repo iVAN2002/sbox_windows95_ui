@@ -1,0 +1,145 @@
+/* (c) RandomTrash, 2018
+ */
+
+@font-face {
+    font-family: 'Tahoma';
+    src: url('Resources/fonts/tahoma.ttf') format('truetype');
+}
+
+.f-grow {
+    flex-grow: 1;
+}
+
+.icon {
+    width: 16px;
+    height: 16px;
+}
+
+.big .icon {
+    width: 32px;
+    height: 32px;
+}
+
+.icon.icon-health {
+    background: url('Resources/img/cross_16.png');
+}
+
+.icon.icon-armor {
+    background: url('Resources/img/shield_16.png');
+}
+
+.big .icon.icon-health {
+    background: url('Resources/img/cross.png');
+}
+
+.big .icon.icon-armor {
+    background: url('Resources/img/shield.png');
+}
+
+.flex-container-vertical {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.flex-container-horizontal {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.panels-container {
+    position: absolute;
+    bottom: 4px;
+    left: 4px;
+    width: 256px;
+    font-family: 'Tahoma';
+}
+
+.panels-container.big {
+    width: 512px;
+}
+
+.panels-container>.panel-item {
+    margin: 4px;
+}
+
+.panels-container>.flex-container-horizontal.panel-item {
+    justify-content: center;
+    align-items: center;
+}
+
+.panels-container>.panel-item>* {
+    margin-right: 4px;
+}
+
+.panels-container>.panel-item>*:last-child {
+    margin-right: 0;
+}
+
+.window {
+    padding: 4px;
+    background-color: #c3c3c3;
+    background: url('Resources/img/border-top-left.png') top left no-repeat, url('Resources/img/border-top-right.png') top right no-repeat, url('Resources/img/border-bottom-left.png') bottom left no-repeat, url('Resources/img/border-bottom-right.png') bottom right no-repeat, url('Resources/img/border-horiz.png') top repeat-x, url('Resources/img/border-horiz.png') bottom repeat-x, url('Resources/img/border-vert.png') left repeat-y, url('Resources/img/border-vert.png') right repeat-y #c3c3c3;
+}
+
+.loading-bar {
+    border-width: 1px;
+    border-style: solid;
+    border-top-color: #808080;
+    border-left-color: #808080;
+    border-right-color: #ffffff;
+    border-bottom-color: #ffffff;
+    background-color: #c0c0c0;
+    padding: 1px;
+}
+
+.loading-bar>.loading-bar-line {
+    width: 100%;
+    height: 20px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.big .loading-bar>.loading-bar-line {
+    height: 40px;
+}
+
+.loading-bar>.loading-bar-line > div {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    height: 20px;
+    line-height: 20px;
+    padding: 0 2px;
+    font-weight: bold;
+}
+
+.big .loading-bar>.loading-bar-line > div {
+    height: 40px;
+    line-height: 40px;
+    font-size: 28px;
+}
+
+.loading-bar>.loading-bar-line > div:first-child {
+    color: #000000;
+    background: #c0c0c0;
+}
+
+.loading-bar>.loading-bar-line > div:last-child {
+    color: #ffffff;
+    background: #000080;
+    top: -20px;
+}
+
+.big .loading-bar>.loading-bar-line > div:last-child {
+    top: -40px;
+}
+
+/* Windows 95 colors:
+ * #c0c0c0 - window background
+ * #808080 #ffffff - border of loading bar
+ * #000080 - blue (active window header, loading bar progress etc)
+ * Windows 3.1 colors:
+ * #c3c3c3 - window background
+ */
