@@ -1,12 +1,12 @@
 using Sandbox;
 
-namespace SuicideBarrels
+namespace Windows95HUD
 {
     public class Addon : BaseAddon
     {
         public override void Loaded(IAddonResources resources)
         {
-            Log.Info("Windows 95 UI Loaded!");
+            Log.Info("Windows 95 HUD Loaded!");
         }
     }
 }
